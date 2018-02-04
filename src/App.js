@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import DiffTwoArrays from './components/DiffTwoArrays';
-import SumAllNumberInRange from './components/SumAllNumberInRange';
-
+import DisplayFunction from './components/DisplayFunction';
 
 class App extends Component {
+  constructor(props) {
+      super(props);
+      this.state = {
+        selectedFunction: "DiffTwoArrays"
+      };
+      console.log("this state is = " + this.state.selectedFunction);
+  }
+
   render() {
     return (
       <div className="App">
@@ -14,8 +19,7 @@ class App extends Component {
           <p>Sum All Number</p>
         </div>
         <div className="col-md-6">
-          <DiffTwoArrays />
-          <SumAllNumberInRange />
+          <DisplayFunction selectedFunction = {this.state.selectedFunction}/>
         </div>
       </div>
     );
