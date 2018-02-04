@@ -70,7 +70,7 @@
 }
 
 .function-argument::before {
-  content: "Argument = "
+  content: "Argument : "
 }
 
 .function-result {
@@ -83,7 +83,7 @@
   content: "Result = ";
 }
 
-.function-sourcode-wrapper {
+.function-sourcecode-wrapper {
   margin: 30px auto;
   padding: 10px 20px;
   border: 2px darkgreen solid;

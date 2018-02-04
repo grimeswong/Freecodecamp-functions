@@ -14,7 +14,7 @@ const SumAllNumberInRange = () => {
         <p className="function-argument">sumAllNumberInRange([1, 4])</p>
         <p className="function-result">{sumAllNumberInRange([1, 4])}</p>
       </div>
-      <div className="function-sourcode-wrapper">
+      <div className="function-sourcecode-wrapper">
         <p className="function-sourcecode-title"></p>
         <p className="function-sourcecode-source">{sumAllNumberInRange.toString()}</p>
       </div>
