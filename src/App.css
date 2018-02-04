@@ -57,6 +57,10 @@
   color: white;
 }
 
+.function-test-title::before {
+  content: "Arguments & Result";
+}
+
 .function-description {
   text-align: left;
 }
@@ -91,11 +95,13 @@
   background:linear-gradient(to right, green , darkgreen);
   color: white;
   font-size: 1.5em;
+}
 
+.function-sourcecode-title::before {
+  content: "Source Code"
 }
 
 .function-sourcecode-source {
   padding: 0 10%;
   text-align: left;
-  text-overflow: ellipsis;
 }

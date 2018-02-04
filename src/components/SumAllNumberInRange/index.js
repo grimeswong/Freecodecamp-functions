@@ -10,12 +10,12 @@ const SumAllNumberInRange = () => {
         <p className="function-description">Return the sum of those two numbers and all numbers between them (two numbers - lowest numbers can come last). </p>
         </div>
       <div className="function-lower-wrapper">
-        <p className="function-test-title">Arguments &amp; Result</p>
+        <p className="function-test-title"></p>
         <p className="function-argument">sumAllNumberInRange([1, 4])</p>
         <p className="function-result">{sumAllNumberInRange([1, 4])}</p>
       </div>
       <div className="function-sourcode-wrapper">
-        <p className="function-sourcecode-title">Source Code: </p>
+        <p className="function-sourcecode-title"></p>
         <p className="function-sourcecode-source">{sumAllNumberInRange.toString()}</p>
       </div>
     </div>
