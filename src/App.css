@@ -29,33 +29,73 @@
 
 
 .component-wrapper-top {
-
+  padding: 30px 20px;
 }
 
 .function-upper-wrapper {
-
+  padding: 10px 20px;
+  background:linear-gradient(to right, green , darkgreen);
+  color:white;
+  border-radius: 5px;
 }
 
 .function-title {
+  font-size: 1.8em;
+}
 
+.function-lower-wrapper {
+  margin: 30px auto;
+  padding: 10px 20px;
+  border: 2px darkgreen solid;
+  border-radius:5px;
+}
+
+.function-test-title {
+  background:linear-gradient(to right, green , darkgreen);
+  padding: 10px;
+  font-size: 1.5em;
+  color: white;
 }
 
 .function-description {
-
+  text-align: left;
 }
 
 .function-argument {
+  text-align: left;
+}
 
+.function-argument::before {
+  content: "Argument = "
 }
 
 .function-result {
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: bold;
+}
 
+.function-result::before {
+  content: "Result = ";
+}
+
+.function-sourcode-wrapper {
+  margin: 30px auto;
+  padding: 10px 20px;
+  border: 2px darkgreen solid;
+  border-radius:5px;
 }
 
 .function-sourcecode-title {
+  padding: 10px;
+  background:linear-gradient(to right, green , darkgreen);
+  color: white;
+  font-size: 1.5em;
 
 }
 
 .function-sourcecode-source {
-
+  padding: 0 10%;
+  text-align: left;
+  text-overflow: ellipsis;
 }
