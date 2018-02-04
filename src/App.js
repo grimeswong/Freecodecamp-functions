@@ -8,15 +8,25 @@ class App extends Component {
       this.state = {
         selectedFunction: "DiffTwoArrays"
       };
-      console.log("this state is = " + this.state.selectedFunction);
+      // console.log("this state is = " + this.state.selectedFunction);
+      this.btnClick = this.btnClick.bind(this)
+  }
+
+  btnClick(obj) {
+    // console.log("click = " + obj.target.value);
+    this.setState({
+      selectedFunction: obj.target.value
+    });
   }
 
   render() {
     return (
       <div className="App">
         <div className="col-md-6 text-left">
-          <p>Difference of Two Arrays</p>
-          <p>Sum All Number</p>
+          <div className="row">
+            <button className="btn btn-success" onClick={this.btnClick} value="DiffTwoArrays">Difference of Two Arrays</button>
+            <button className="btn btn-success" onClick={this.btnClick} value="SumAllNumberInRange">Sum All Number In Range</button>
+          </div>
         </div>
         <div className="col-md-6">
           <DisplayFunction selectedFunction = {this.state.selectedFunction}/>

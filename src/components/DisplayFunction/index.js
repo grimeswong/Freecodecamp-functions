@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import DiffTwoArrays from '../DiffTwoArrays';
+import SumAllNumberInRange from '../SumAllNumberInRange';
 
 const DisplayFunction = (props) => {
   console.log("DisplayFunction = " + props.selectedFunction);
@@ -7,6 +8,12 @@ const DisplayFunction = (props) => {
   switch (props.selectedFunction) {
       case 'DiffTwoArrays':
       return <DiffTwoArrays />
+
+      case 'SumAllNumberInRange':
+      return <SumAllNumberInRange />
+
+      default:
+      return null;
   }
 
 }
