@@ -1,6 +1,6 @@
 import React from 'react';
-import DiffTwoArrays from '../DiffTwoArrays';
-import SumAllNumberInRange from '../SumAllNumberInRange';
+import DiffTwoArrays from '../JS_Functions/diffTwoArrays.js';
+import SumAllNumberInRange from '../JS_Functions/sumAllNumberInRange.js';
 
 const DisplayFunction = (props) => {
   console.log("DisplayFunction = " + props.selectedFunction);
