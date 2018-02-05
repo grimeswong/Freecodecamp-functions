@@ -4,11 +4,12 @@ const ListFunctions = (props) => {
 
   const functionList = ['DiffTwoArrays','SumAllNumberInRange'];
 
+
   return(
     <div>
       <ul>
         {functionList.map((name, index) => {
-            return <li key={index}> {name}</li>;
+            return <li onClick={()=>props.onFunctionSelect(name)} key={index}>{name}</li>
         })}
       </ul>
     </div>
