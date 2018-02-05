@@ -2,7 +2,7 @@ import React from 'react';
 
 const ListFunctions = (props) => {
 
-  const functionList = ['DiffTwoArrays','SumAllNumberInRange'];
+  const functionList = ['DiffTwoArrays','SumAllNumberInRange', 'RomanNumeralConverter'];
 
 
   return(
