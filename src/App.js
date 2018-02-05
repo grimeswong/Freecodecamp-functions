@@ -9,7 +9,6 @@ class App extends Component {
       this.state = {
         selectedFunction: "DiffTwoArrays"
       };
-      // console.log("this state is = " + this.state.selectedFunction);
   }
 
   render() {
