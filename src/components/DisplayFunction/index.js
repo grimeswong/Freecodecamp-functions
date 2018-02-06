@@ -5,6 +5,7 @@ import RomanNumeralConverter from '../JS_Functions/romanNumeralConverter.js';
 import GetGeolocation from '../JS_Functions/getGeolocation.js';
 import CaesarCipher from '../JS_Functions/caesarCipher.js';
 import WhereDoIBelong from '../JS_Functions/whereDoIBelong.js';
+import SeekAndDestroy from '../JS_Functions/seekAndDestroy.js';
 
 const DisplayFunction = (props) => {
   console.log("DisplayFunction = " + props.selectedFunction);
@@ -16,6 +17,7 @@ const DisplayFunction = (props) => {
       case 'GetGeolocation': return <GetGeolocation />
       case 'CaesarCipher': return <CaesarCipher />
       case 'WhereDoIBelong': return <WhereDoIBelong />
+      case 'SeekAndDestroy': return <SeekAndDestroy />
 
       default:
       return null;
