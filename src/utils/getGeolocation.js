@@ -4,16 +4,12 @@
 function getGeolocation() {
 
   if(navigator.geolocation) {
-    console.log(navigator.geolocation);
     navigator.geolocation.getCurrentPosition(function(position) {
-    var locationMessage = "latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude;
-    console.log(locationMessage);
-      return locationMessage;
+      return position;
     });
   } else {
-    return "Couldn't get user location details";
+    return "Unable to locate user location";
   }
-
 }
 
 export default getGeolocation;
