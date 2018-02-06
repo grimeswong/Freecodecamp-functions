@@ -9,7 +9,6 @@ class GetGeolocation extends React.Component {
         latitude: "0",
         longitude: "0"
     };
-
   }
 
   componentDidMount() {
@@ -26,9 +25,20 @@ class GetGeolocation extends React.Component {
         longitude: "Unable to locate user location"
       });
     }
-
   }
 
+  componentWillUpdate(nextProps, nextState) {
+     console.log('User\'s geolocation is updated');
+     console.log(`NextProps = ${nextProps.latitude} \n NextState = ${nextState.latitude}`);
+  }
+  
+  componentWillUnmount() {
+     console.log('Component WILL UNMOUNT!');
+     this.setState ({
+         latitude: "0",
+         longitude: "0"
+     });
+  }
 
   render() {
     return (
@@ -40,7 +50,7 @@ class GetGeolocation extends React.Component {
         <div className="function-lower-wrapper">
           <p className="function-test-title"></p>
           <p className="function-argument">getGeolocation()</p>
-          <p className="function-result"><br/> Latitude: {this.state.latitude} <br/> longitude: {this.state.longitude}</p>
+          <p className="function-result"><br/> Latitude: {this.state.latitude} <br/> Longitude: {this.state.longitude}</p>
         </div>
         <div className="function-sourcecode-wrapper">
           <p className="function-sourcecode-title"></p>
