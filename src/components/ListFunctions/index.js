@@ -4,7 +4,7 @@ const ListFunctions = (props) => {
 
   const functionList = ['DiffTwoArrays','SumAllNumberInRange',
                         'RomanNumeralConverter', 'GetGeolocation',
-                        'CaesarCipher'
+                        'CaesarCipher', 'WhereDoIBelong'
                        ];
 
 
