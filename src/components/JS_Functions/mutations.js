@@ -14,7 +14,7 @@ const Mutations = () => {
       <div className="function-lower-wrapper">
         <p className="function-test-title"></p>
         <p className="function-argument">mutations(["zyxwvutsrqponmlkjihgfedcba", "qrstu"])</p>
-        <p className="function-result">{mutations(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]).toString()}</p>
+        <p className="function-result">{JSON.stringify(mutations(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]))}</p>
       </div>
       <div className="function-sourcecode-wrapper">
         <p className="function-sourcecode-title"></p>
