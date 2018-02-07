@@ -6,6 +6,7 @@ import GetGeolocation from '../JS_Functions/getGeolocation.js';
 import CaesarCipher from '../JS_Functions/caesarCipher.js';
 import WhereDoIBelong from '../JS_Functions/whereDoIBelong.js';
 import SeekAndDestroy from '../JS_Functions/seekAndDestroy.js';
+import FalsyBouncer from '../JS_Functions/falsyBouncer.js';
 
 const DisplayFunction = (props) => {
   console.log("DisplayFunction = " + props.selectedFunction);
@@ -18,6 +19,7 @@ const DisplayFunction = (props) => {
       case 'CaesarCipher': return <CaesarCipher />
       case 'WhereDoIBelong': return <WhereDoIBelong />
       case 'SeekAndDestroy': return <SeekAndDestroy />
+      case 'FalsyBouncer': return <FalsyBouncer />
 
       default:
       return null;
