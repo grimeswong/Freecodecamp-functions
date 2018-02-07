@@ -11,7 +11,7 @@ const FalsyBouncer = () => {
       <div className="function-lower-wrapper">
         <p className="function-test-title"></p>
         <p className="function-argument">falsyBouncer([1, null, NaN, 2, undefined])</p>
-        <p className="function-result">{falsyBouncer([1, null, NaN, 2, undefined]).toString()}</p>
+        <p className="function-result">{JSON.stringify(falsyBouncer([1, null, NaN, 2, undefined]))}</p>
       </div>
       <div className="function-sourcecode-wrapper">
         <p className="function-sourcecode-title"></p>
