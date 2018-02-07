@@ -6,7 +6,7 @@ const ListFunctions = (props) => {
                         'RomanNumeralConverter', 'GetGeolocation',
                         'CaesarCipher', 'WhereDoIBelong',
                         'SeekAndDestroy', 'FalsyBouncer',
-                        'Mutations'
+                        'Mutations', 'RepeatAString'
                        ];
 
 

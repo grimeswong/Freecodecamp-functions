@@ -8,6 +8,8 @@ import WhereDoIBelong from '../JS_Functions/whereDoIBelong.js';
 import SeekAndDestroy from '../JS_Functions/seekAndDestroy.js';
 import FalsyBouncer from '../JS_Functions/falsyBouncer.js';
 import Mutations from '../JS_Functions/mutations.js';
+import RepeatAString from '../JS_Functions/repeatAString.js';
+
 
 const DisplayFunction = (props) => {
   console.log("DisplayFunction = " + props.selectedFunction);
@@ -22,12 +24,12 @@ const DisplayFunction = (props) => {
       case 'SeekAndDestroy': return <SeekAndDestroy />
       case 'FalsyBouncer': return <FalsyBouncer />
       case 'Mutations': return <Mutations />
+      case 'RepeatAString': return <RepeatAString />
 
       default:
       return null;
   }
 
 }
-
 
 export default DisplayFunction;
