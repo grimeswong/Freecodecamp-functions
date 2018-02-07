@@ -9,6 +9,7 @@ import SeekAndDestroy from '../JS_Functions/seekAndDestroy.js';
 import FalsyBouncer from '../JS_Functions/falsyBouncer.js';
 import Mutations from '../JS_Functions/mutations.js';
 import RepeatAString from '../JS_Functions/repeatAString.js';
+import ChunkyMonkey from '../JS_Functions/chunkyMonkey.js';
 
 
 const DisplayFunction = (props) => {
@@ -25,6 +26,7 @@ const DisplayFunction = (props) => {
       case 'FalsyBouncer': return <FalsyBouncer />
       case 'Mutations': return <Mutations />
       case 'RepeatAString': return <RepeatAString />
+      case 'ChunkyMonkey': return <ChunkyMonkey />
 
       default:
       return null;
