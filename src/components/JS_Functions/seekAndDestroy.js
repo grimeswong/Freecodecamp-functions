@@ -13,7 +13,7 @@ const SeekAndDestroy = () => {
       <div className="function-lower-wrapper">
         <p className="function-test-title"></p>
         <p className="function-argument">seekAndDestroy([1, 2, 3, 5, 1, 2, 3], 2, 3)</p>
-        <p className="function-result">{seekAndDestroy([1, 2, 3, 5, 1, 2, 3], 2, 3).toString()}</p>
+        <p className="function-result">{JSON.stringify(seekAndDestroy([1, 2, 3, 5, 1, 2, 3], 2, 3))}</p>
       </div>
       <div className="function-sourcecode-wrapper">
         <p className="function-sourcecode-title"></p>
