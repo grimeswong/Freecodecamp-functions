@@ -11,6 +11,7 @@ import Mutations from '../JS_Functions/mutations.js';
 import RepeatAString from '../JS_Functions/repeatAString.js';
 import ChunkyMonkey from '../JS_Functions/chunkyMonkey.js';
 import ConfirmTheEnding from '../JS_Functions/confirmTheEnding.js';
+import LargestNumbersInArrays from '../JS_Functions/largestNumbersInArrays.js';
 
 
 const DisplayFunction = (props) => {
@@ -29,6 +30,7 @@ const DisplayFunction = (props) => {
       case 'RepeatAString': return <RepeatAString />
       case 'ChunkyMonkey': return <ChunkyMonkey />
       case 'ConfirmTheEnding': return <ConfirmTheEnding />
+      case 'LargestNumbersInArrays': return <LargestNumbersInArrays />
 
       default:
       return null;
