@@ -7,7 +7,7 @@ const ListFunctions = (props) => {
                         'CaesarCipher', 'WhereDoIBelong',
                         'SeekAndDestroy', 'FalsyBouncer',
                         'Mutations', 'RepeatAString',
-                        'ChunkyMonkey'
+                        'ChunkyMonkey', 'ConfirmTheEnding'
                        ];
 
 
