@@ -12,7 +12,7 @@ const DiffTwoArrays = () => {
         <p className="function-test-title"></p>
         <p className="function-argument"> Array 1 = ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"] </p>
         <p className="function-argument"> Array 2 = ["diorite", "andesite", "grass", "dirt", "dead shrub"] </p>
-        <p className="function-result">{diffTwoArrays(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"])}</p>
+        <p className="function-result">{JSON.stringify(diffTwoArrays(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]))}</p>
       </div>
       <div className="function-sourcecode-wrapper">
         <p className="function-sourcecode-title"></p>
