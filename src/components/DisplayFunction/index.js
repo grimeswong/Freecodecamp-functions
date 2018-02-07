@@ -12,6 +12,8 @@ import RepeatAString from '../JS_Functions/repeatAString.js';
 import ChunkyMonkey from '../JS_Functions/chunkyMonkey.js';
 import ConfirmTheEnding from '../JS_Functions/confirmTheEnding.js';
 import LargestNumbersInArrays from '../JS_Functions/largestNumbersInArrays.js';
+import TitleCaseASentence from '../JS_Functions/titleCaseASentence.js';
+
 
 
 const DisplayFunction = (props) => {
@@ -31,6 +33,7 @@ const DisplayFunction = (props) => {
       case 'ChunkyMonkey': return <ChunkyMonkey />
       case 'ConfirmTheEnding': return <ConfirmTheEnding />
       case 'LargestNumbersInArrays': return <LargestNumbersInArrays />
+      case 'TitleCaseASentence': return <TitleCaseASentence />
 
       default:
       return null;
