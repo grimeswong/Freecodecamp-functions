@@ -18,7 +18,7 @@
 
   if (newString.length>1) { // check if the string more than one character
     while(newString.length >= 2) {
-      if(newString[0] == newString[newString.length-1]) {  // compare the first character and last character
+      if(newString[0] === newString[newString.length-1]) {  // compare the first character and last character
         newString = newString.slice(1, newString.length-1);  // remove the head and tail of the string
       } else {
         return false;
