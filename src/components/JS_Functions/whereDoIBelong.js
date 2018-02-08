@@ -5,7 +5,7 @@ const WhereDoIBelong = () => {
   return (
     <div className="component-wrapper-top">
       <div className="function-upper-wrapper">
-        <p className="function-title">Where DO I Belong</p>
+        <p className="function-title">Where Do I Belong</p>
         <p className="function-description">Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.</p>
       </div>
       <div className="function-lower-wrapper">

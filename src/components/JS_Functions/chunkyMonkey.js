@@ -5,8 +5,9 @@ const ChunkyMonkey = () => {
   return (
     <div className="component-wrapper-top">
       <div className="function-upper-wrapper">
-        <p className="function-title">Where DO I Belong</p>
-        <p className="function-description">Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.</p>
+        <p className="function-title">Chunk Monkey</p>
+        <p className="function-description">A function that splits an array (first argument) into groups the length
+        of size (second argument) and returns them as a two-dimensional array.</p>
       </div>
       <div className="function-lower-wrapper">
         <p className="function-test-title"></p>
