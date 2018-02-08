@@ -8,7 +8,8 @@ const ListFunctions = (props) => {
                         'SeekAndDestroy', 'FalsyBouncer',
                         'Mutations', 'RepeatAString',
                         'ChunkyMonkey', 'ConfirmTheEnding',
-                        'LargestNumbersInArrays', 'TitleCaseASentence'
+                        'LargestNumbersInArrays', 'TitleCaseASentence',
+                        'FindTheLongestWordInAString'
                        ];
 
 

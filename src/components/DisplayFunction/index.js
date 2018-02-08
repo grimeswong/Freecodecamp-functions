@@ -13,6 +13,8 @@ import ChunkyMonkey from '../JS_Functions/chunkyMonkey.js';
 import ConfirmTheEnding from '../JS_Functions/confirmTheEnding.js';
 import LargestNumbersInArrays from '../JS_Functions/largestNumbersInArrays.js';
 import TitleCaseASentence from '../JS_Functions/titleCaseASentence.js';
+import FindTheLongestWordInAString from '../JS_Functions/findTheLongestWordInAString.js';
+
 
 
 
@@ -34,6 +36,7 @@ const DisplayFunction = (props) => {
       case 'ConfirmTheEnding': return <ConfirmTheEnding />
       case 'LargestNumbersInArrays': return <LargestNumbersInArrays />
       case 'TitleCaseASentence': return <TitleCaseASentence />
+      case 'FindTheLongestWordInAString': return <FindTheLongestWordInAString />
 
       default:
       return null;
