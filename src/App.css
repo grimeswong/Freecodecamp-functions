@@ -29,6 +29,7 @@
 
 ul {
   margin-top: 20px;
+  padding: 0 35px;
 }
 ul::before {
   font-size: 1.5em;
