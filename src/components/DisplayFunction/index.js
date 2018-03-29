@@ -16,6 +16,7 @@ import TitleCaseASentence from '../JS_Functions/titleCaseASentence.js';
 import FindTheLongestWordInAString from '../JS_Functions/findTheLongestWordInAString.js';
 import CheckForPalindromes from '../JS_Functions/checkForPalindromes.js';
 import WhereforeArtThou from '../JS_Functions/whereforeArtThou.js';
+import SearchAndReplace from '../JS_Functions/searchAndReplace.js';
 
 
 
@@ -41,6 +42,7 @@ const DisplayFunction = (props) => {
       case 'FindTheLongestWordInAString': return <FindTheLongestWordInAString />
       case 'CheckForPalindromes': return <CheckForPalindromes />
       case 'WhereforeArtThou': return <WhereforeArtThou />
+      case 'SearchAndReplace': return <SearchAndReplace />
 
       default:
       return null;
