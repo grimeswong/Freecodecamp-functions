@@ -9,7 +9,8 @@ const ListFunctions = (props) => {
                         'Mutations', 'RepeatAString',
                         'ChunkyMonkey', 'ConfirmTheEnding',
                         'LargestNumbersInArrays', 'TitleCaseASentence',
-                        'FindTheLongestWordInAString', 'CheckForPalindromes'
+                        'FindTheLongestWordInAString', 'CheckForPalindromes',
+                        'WhereforeArtThou'
                        ];
 
 
