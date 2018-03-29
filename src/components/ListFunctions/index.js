@@ -10,7 +10,8 @@ const ListFunctions = (props) => {
                         'ChunkyMonkey', 'ConfirmTheEnding',
                         'LargestNumbersInArrays', 'TitleCaseASentence',
                         'FindTheLongestWordInAString', 'CheckForPalindromes',
-                        'WhereforeArtThou', 'SearchAndReplace'
+                        'WhereforeArtThou', 'SearchAndReplace',
+                        'TruncateAString'
                        ];
 
 
