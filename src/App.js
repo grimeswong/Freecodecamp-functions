@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './style/App.scss';
 import ListFunctions from './components/ListFunctions';
 import DisplayComponent from './components/DisplayComponent.js';
 
@@ -14,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="col-md-6 text-left">
+        <div className="col-md-6">
           <div className="row">
             <ListFunctions
               onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
