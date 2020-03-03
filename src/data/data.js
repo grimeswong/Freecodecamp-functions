@@ -135,6 +135,15 @@ const Data = [
       argument: [[1, 2, 3, 5, 1, 2, 3], 2, 3],
     }
   },
+  {
+    title:"Sum All Number In Range",
+    funcName: "sumAllNumberInRange",
+    description: "Return the sum of those two numbers and all numbers between them (two numbers - lowest numbers can come last).",
+    argument: ["([1, 4])"],
+    test: {
+      argument: [[1, 4]],
+    }
+  },
 ]
 
 export default Data;
