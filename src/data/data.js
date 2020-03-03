@@ -117,6 +117,15 @@ const Data = [
       argument: [44],
     }
   },
+  {
+    title:"Search And Replace",
+    funcName: "searchAndReplace",
+    description: "Perform a search and replace on the sentence using the arguments provided and return the new sentence.\n First argument is the sentence to perform the search and replace on.\n Second argument is the word that you will be replacing (before).\n Third argument is what you will be replacing the second argument with (after).",
+    argument: ["(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\")"],
+    test: {
+      argument: ["He is Sleeping on the couch", "Sleeping", "sitting"],
+    }
+  },
 ]
 
 export default Data;
