@@ -12,26 +12,26 @@ const DisplayComponent = (props) => {
 
   // return input argument text(s) from array of argument
   const argumentText = Data[getIndex].argument.map((element, index) => {
-    return (<p key={index} className="function-argument">{element}</p>)
+    return (<p key={index} className="function--argument">{element}</p>)
   })
 
   console.log(Data[getIndex].test.argument)
 
   return (
-  <div className="component-wrapper-top">
-    <div className="function-upper-wrapper">
-      <p className="function-title">{Data[getIndex].title}</p>
-      <p className="function-description">{Data[getIndex].description}</p>
+  <div className="component--wrapper">
+    <div className="function--title-wrapper component--box-shadow">
+      <p className="function--title">{Data[getIndex].title}</p>
+      <p className="function--description">{Data[getIndex].description}</p>
     </div>
-    <div className="function-lower-wrapper">
-      <p className="function-test-title"></p>
+    <div className="function--test-wrapper component--box-shadow">
+      <p className="function--test-title"></p>
       {argumentText}
-      <p className="function-result">{JSON.stringify(util[getFuncName](...Data[getIndex].test.argument))}</p>
+      <p className="function--result">{JSON.stringify(util[getFuncName](...Data[getIndex].test.argument))}</p>
     </div>
-    <div className="function-sourcecode-wrapper">
-      <p className="function-sourcecode-title"></p>
+    <div className="function--sourcecode-wrapper component--box-shadow">
+      <p className="function--sourcecode-title"></p>
       <pre>
-        <code className="function-sourcecode-source">{util[getFuncName].toString()}</code>
+        <code className="function--sourcecode-source">{util[getFuncName].toString()}</code>
       </pre>
     </div>
   </div>

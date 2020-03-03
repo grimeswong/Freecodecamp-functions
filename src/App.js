@@ -14,11 +14,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="col-md-6">
-          <div className="row">
-            <ListFunctions
-              onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
-            />
-          </div>
+          <ListFunctions
+            onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
+          />
         </div>
         <div className="col-md-6">
           <DisplayComponent

@@ -4,7 +4,7 @@ import Data from '../../data/data.js';
 const ListFunctions = (props) => {
 
   return(
-    <div>
+    <div className="component--wrapper">
       <ul>List of JS functions ({Data.length})
         {Data.map((utility, index) => {
           // only return list of valid title

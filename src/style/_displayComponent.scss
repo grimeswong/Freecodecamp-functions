@@ -1,68 +1,80 @@
-.component-wrapper-top {
-  padding: 30px 20px;
-}
-
-.function-upper-wrapper {
-  padding: 10px 20px;
-  background:linear-gradient(to right, green , darkgreen);
-  color:white;
-  border-radius: 5px;
-}
-
-.function-title {
-  font-size: 1.8em;
-}
-
-.function-lower-wrapper {
-  margin: 30px auto;
+@mixin section-spacing() {
+  margin: 0 auto 3rem;
   padding: 10px 20px;
   border: 2px darkgreen solid;
   border-radius:5px;
 }
 
-.function-test-title {
+@mixin section-background() {
   background:linear-gradient(to right, green , darkgreen);
-  padding: 10px;
-  font-size: 1.5em;
+}
+
+@mixin section-title() {
+  text-align: center;
+  font-size: 1.5rem;
   color: white;
 }
 
-.function-test-title::before {
-  content: "Argument(s) & Result";
-}
-
-.function-description {
+@mixin section-content() {
   text-align: left;
+  font-size: 1rem;
+  color: black;
 }
 
-.function-argument {
-  text-align: left;
-}
+.function {
+  &--title-wrapper {
+    @include section-spacing();
+    @include section-background();
+  }
 
-.function-result {
-  text-align: left;
-  font-size: 1.3em;
-  font-weight: bold;
-}
+  &--title {
+    @include section-title();
+  }
 
-.function-result::before {
-  content: "Result = ";
-}
+  &--test-wrapper {
+    @include section-spacing();
+  }
 
-.function-sourcecode-wrapper {
-  margin: 30px auto;
-  padding: 10px 20px;
-  border: 2px darkgreen solid;
-  border-radius:5px;
-}
+  &--test-title {
+    @include section-background();
+    @include section-title();
+  }
 
-.function-sourcecode-title {
-  padding: 10px;
-  background:linear-gradient(to right, green , darkgreen);
-  color: white;
-  font-size: 1.5em;
-}
+  &--test-title::before {
+    content: "Argument(s) & Result";
+  }
 
-.function-sourcecode-title::before {
-  content: "Source Code"
+  &--description {
+    @include section-content();
+    color: white;
+  }
+
+  &--argument {
+    @include section-content();
+  }
+
+  &--result {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  &--result::before {
+    content: "Result = ";
+  }
+
+  &--sourcecode {
+    &-wrapper {
+      @include section-spacing;
+    }
+
+    &-title {
+      @include section-background();
+      @include section-title();
+    }
+
+    &-title::before {
+      content: "Source Code"
+    }
+  }
 }
