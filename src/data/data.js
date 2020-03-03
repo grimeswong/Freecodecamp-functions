@@ -46,12 +46,12 @@ const Data = [
     }
   },
   {
-    title:"",
-    funcName: "",
-    description:"",
-    argument: [],
+    title:"Chunk Monkey",
+    funcName: "chunkyMonkey",
+    description:"A function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.",
+    argument: ["[\"a\", \"b\", \"c\", \"d\"], 2"],
     test: {
-      argument: [],
+      argument: [["a", "b", "c", "d"], 2],
     }
   },
 ]
