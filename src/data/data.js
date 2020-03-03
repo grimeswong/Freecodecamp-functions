@@ -162,6 +162,15 @@ const Data = [
       argument: ["Absolutely Longer", 2],
     }
   },
+  {
+    title:"Where Do I Belong",
+    funcName: "whereDoIBelong",
+    description: "Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.",
+    argument: ["([10, 20, 30, 40, 50], 35)"],
+    test: {
+      argument: [[10, 20, 30, 40, 50], 35],
+    }
+  },
 ]
 
 export default Data;
