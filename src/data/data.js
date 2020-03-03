@@ -126,6 +126,15 @@ const Data = [
       argument: ["He is Sleeping on the couch", "Sleeping", "sitting"],
     }
   },
+  {
+    title:"Seek And Destroy",
+    funcName: "seekAndDestroy",
+    description: "Remove all elements from the initial array that are of the same value as these arguments. \n eg. [1,2,3,1,2,3] 2,3] return [1,1]",
+    argument: ["([1, 2, 3, 5, 1, 2, 3], 2, 3)"],
+    test: {
+      argument: [[1, 2, 3, 5, 1, 2, 3], 2, 3],
+    }
+  },
 ]
 
 export default Data;
