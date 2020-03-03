@@ -14,6 +14,8 @@ const DisplayComponent = (props) => {
   const argumentText = Data[getIndex].argument.map((element, index) => {
     return (<p key={index} className="function-argument">{element}</p>)
   })
+  
+  console.log(Data[getIndex].test.argument)
 
   return (
   <div className="component-wrapper-top">
@@ -24,7 +26,7 @@ const DisplayComponent = (props) => {
     <div className="function-lower-wrapper">
       <p className="function-test-title"></p>
       {argumentText}
-      <p className="function-result">{JSON.stringify(util[getFuncName](Data[getIndex].test.argument))}</p>
+      <p className="function-result">{JSON.stringify(util[getFuncName](...Data[getIndex].test.argument))}</p>
     </div>
     <div className="function-sourcecode-wrapper">
       <p className="function-sourcecode-title"></p>

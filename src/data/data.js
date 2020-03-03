@@ -2,7 +2,7 @@
   * This file contains all the data about the FreeCodeCamp Javacript Challenge
   * Type: Javacript Object
   *
-  * argument must store as an array, otherwise the component can't read it properly
+  * argument must store as Array, otherwise the component can't read it properly
   **/
 
 const Data = [
@@ -22,7 +22,7 @@ const Data = [
     description:  "function which shifts 13 ciphers to encode string as input and returns a decoded string.",
     argument: ["GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."],
     test: {
-      argument: "GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.",
+      argument: ["GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."],
       result: "caesarCipher(\"GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.\")"
     },
     sourcetitle: ""
