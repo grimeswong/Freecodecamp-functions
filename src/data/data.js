@@ -9,7 +9,7 @@ const Data = [
     funcName: "diffTwoArrays",
     description:"Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both.",
     test: {
-      argument: "[Array 1 = [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], Array 2 = [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]]",
+      argument: [["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]],
       result: "JSON.stringify(diffTwoArrays([\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]))"
     }
   },
