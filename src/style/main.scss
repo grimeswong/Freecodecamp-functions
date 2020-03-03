@@ -2,8 +2,13 @@
 // Reset and base
 @import './_agent-reset.css';
 
+// variables and mixin
+@import './mixin.scss';
 
 // Component
 @import './App.scss';
-@import './_ListFunctions.scss';
+@import './ListFunctions.scss';
 @import './displayComponent.scss';
+
+// responsive
+@import './responsive.scss';

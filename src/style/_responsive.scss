@@ -1,0 +1,19 @@
+@include tablet {
+  .list {
+    &--wrapper {
+      ul {
+        grid-template-columns: 48% 48%;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .list {
+    &--wrapper {
+      ul {
+        grid-template-columns: 100%;
+      }
+    }
+  }
+}
