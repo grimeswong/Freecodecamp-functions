@@ -144,6 +144,15 @@ const Data = [
       argument: [[1, 4]],
     }
   },
+  {
+    title:"Title Case A Sentence",
+    funcName: "titleCaseASentence",
+    description: "Return the provided string with the first letter of each word capitalized. And rest of the word is in lower case.",
+    argument: ["(\"I'm a little tea pot\")"],
+    test: {
+      argument: ["I'm a little tea pot"],
+    }
+  },
 ]
 
 export default Data;
