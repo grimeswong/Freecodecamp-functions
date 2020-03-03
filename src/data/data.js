@@ -90,6 +90,15 @@ const Data = [
       argument: [[[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]],
     }
   },
+  {
+    title:"Mutations",
+    funcName: "mutations",
+    description: "Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.\n eg. [\"hello\", \"Hello\"], should return true because all of the letters in the second string are present in the first, ignoring case.",
+    argument: ["([\"zyxwvutsrqponmlkjihgfedcba\", \"qrstu\"])"],
+    test: {
+      argument: [["zyxwvutsrqponmlkjihgfedcba", "qrstu"]],
+    }
+  },
 ]
 
 export default Data;
