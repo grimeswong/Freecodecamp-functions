@@ -3,7 +3,20 @@
   * Type: Javacript Object
   *
   * argument must store as Array, otherwise the component can't read it properly
+  *
   **/
+
+  // Copy Data temple and filled the details
+  // {
+  //   title:"",
+  //   funcName: "",
+  //   description:"",
+  //   argument: [],
+  //   test: {
+  //     argument: [],
+  //     result: "JSON.stringify(diffTwoArrays([\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]))"
+  //   }
+  // },
 
 const Data = [
   {
