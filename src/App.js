@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import DisplayFunction from './components/DisplayFunction';
 import ListFunctions from './components/ListFunctions';
 import DisplayComponent from './components/DisplayComponent.js';
 
@@ -8,7 +7,7 @@ class App extends Component {
   constructor(props) {
       super(props);
       this.state = {
-        selectedFunction: "DiffTwoArrays"
+        selectedFunction: "Difference of Two Arrays"
       };
   }
 
@@ -23,7 +22,9 @@ class App extends Component {
           </div>
         </div>
         <div className="col-md-6">
-          <DisplayFunction selectedFunction = {this.state.selectedFunction}/>
+          <DisplayComponent
+            selectedFunction={this.state.selectedFunction}
+          />
         </div>
       </div>
     );
