@@ -63,6 +63,15 @@ const Data = [
       argument: ["If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain"],
     }
   },
+  {
+    title:"Falsy Bouncer",
+    funcName: "falsyBouncer",
+    description:"Remove all falsy values from an array like false, null, 0, \"\", undefined, and NaN.",
+    argument: ["([1, null, NaN, 2, undefined])"],
+    test: {
+      argument: [[1, null, NaN, 2, undefined]],
+    }
+  },
 ]
 
 export default Data;
