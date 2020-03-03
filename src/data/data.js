@@ -24,8 +24,7 @@ const Data = [
     test: {
       argument: ["GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."],
       result: "caesarCipher(\"GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.\")"
-    },
-    sourcetitle: ""
+    }
   }
 ]
 

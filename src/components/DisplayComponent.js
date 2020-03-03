@@ -14,7 +14,7 @@ const DisplayComponent = (props) => {
   const argumentText = Data[getIndex].argument.map((element, index) => {
     return (<p key={index} className="function-argument">{element}</p>)
   })
-  
+
   console.log(Data[getIndex].test.argument)
 
   return (
