@@ -100,7 +100,7 @@ const Data = [
     }
   },
   {
-    title:"Repeat A String Repeat A String",
+    title:"Repeat A String",
     funcName: "repeatAString",
     description: "Repeat a given string (first argument) num times (second argument). Return an empty string if num is not a positive number.",
     argument: ["(\"*\", 8)"],

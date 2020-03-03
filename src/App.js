@@ -12,16 +12,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="col-md-6">
-          <ListFunctions
-            onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
-          />
-        </div>
-        <div className="col-md-6">
-          <DisplayComponent
-            selectedFunction={this.state.selectedFunction}
-          />
+      <div className="App container">
+        <div className="row">
+          <div className="col-md-6">
+            <ListFunctions
+              onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
+              />
+          </div>
+          <div className="col-md-6">
+            <DisplayComponent
+              selectedFunction={this.state.selectedFunction}
+              />
+          </div>
         </div>
       </div>
     );
