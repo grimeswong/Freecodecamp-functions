@@ -124,7 +124,6 @@ li:hover {
   content: "Source Code"
 }
 
-.function-sourcecode-source {
-  padding: 0 10%;
+pre {
   text-align: left;
 }
