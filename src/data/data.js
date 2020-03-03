@@ -46,12 +46,21 @@ const Data = [
     }
   },
   {
-    title:"Chunk Monkey",
+    title:"Chunky Monkey",
     funcName: "chunkyMonkey",
     description:"A function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.",
     argument: ["[\"a\", \"b\", \"c\", \"d\"], 2"],
     test: {
       argument: [["a", "b", "c", "d"], 2],
+    }
+  },
+  {
+    title:"Confirm The Ending",
+    funcName: "confirmTheEnding",
+    description:"Check if a string (first argument, str) ends with the given target string (second argument, target).",
+    argument: ["(\"If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing\", \"mountain\")"],
+    test: {
+      argument: ["If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain"],
     }
   },
 ]
