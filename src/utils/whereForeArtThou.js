@@ -1,12 +1,12 @@
 
-/* Return an array the match the second parameters sets of array compare with 
+/* Return an array the match the second parameters sets of array compare with
    first parameter(array)
 */
 
-function whereforeArtThou(collection, source) { 
+function whereforeArtThou(collection, source) {
   var arr = [];
   var keys = Object.keys(source);   //array of keys
-  
+
   arr = collection.filter(function(colObject) {
     for(var j=0; j<keys.length; j++) {
       // 1) Check each key in source whether is in the collection's object
@@ -17,8 +17,8 @@ function whereforeArtThou(collection, source) {
     }
     return true;
   });
- 
-  return JSON.stringify(arr);
+
+  return arr;
 }
 
 export default whereforeArtThou;
