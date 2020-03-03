@@ -72,6 +72,15 @@ const Data = [
       argument: [[1, null, NaN, 2, undefined]],
     }
   },
+  {
+    title:"Find The Longest Word In A String",
+    funcName: "findTheLongestWordInAString",
+    description:"Return the length of the longest word in the provided sentence.",
+    argument: ["(\"What is the average airspeed velocity of an unladen swallow\")"],
+    test: {
+      argument: ["What is the average airspeed velocity of an unladen swallow"],
+    }
+  },
 ]
 
 export default Data;
