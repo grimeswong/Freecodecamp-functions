@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './style/App.scss';
 import ListFunctions from './components/ListFunctions';
 import DisplayComponent from './components/DisplayComponent.js';
 
