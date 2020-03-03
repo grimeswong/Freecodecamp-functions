@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import DisplayFunction from './components/DisplayFunction';
 import ListFunctions from './components/ListFunctions';
+import DisplayComponent from './components/DisplayComponent.js';
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
       <div className="App">
         <div className="col-md-6 text-left">
           <div className="row">
+            <DisplayComponent />
             <ListFunctions
               onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
             />
