@@ -17,7 +17,6 @@ class App extends Component {
       <div className="App">
         <div className="col-md-6 text-left">
           <div className="row">
-            <DisplayComponent />
             <ListFunctions
               onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
             />

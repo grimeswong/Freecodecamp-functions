@@ -1,25 +1,14 @@
 import React from 'react';
+import Data from '../../data/data.js';
 
 const ListFunctions = (props) => {
-
-  const functionList = ['DiffTwoArrays','SumAllNumberInRange',
-                        'RomanNumeralConverter', 'GetGeolocation',
-                        'CaesarCipher', 'WhereDoIBelong',
-                        'SeekAndDestroy', 'FalsyBouncer',
-                        'Mutations', 'RepeatAString',
-                        'ChunkyMonkey', 'ConfirmTheEnding',
-                        'LargestNumbersInArrays', 'TitleCaseASentence',
-                        'FindTheLongestWordInAString', 'CheckForPalindromes',
-                        'WhereforeArtThou', 'SearchAndReplace',
-                        'TruncateAString'
-                       ];
-
 
   return(
     <div>
       <ul>
-        {functionList.map((name, index) => {
-            return <li onClick={()=>props.onFunctionSelect(name)} key={index}>{name}</li>
+        {Data.map((utility, index) => {
+          console.log(utility);
+          return <li onClick={()=>props.onFunctionSelect(utility.title)} key={index}>{utility.title}</li>
         })}
       </ul>
     </div>
