@@ -31,7 +31,7 @@ const Data = [
     title: "Caesar Ciper",
     funcName: "caesarCipher",
     description:  "function which shifts 13 ciphers to encode string as input and returns a decoded string.",
-    argument: ["GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."],
+    argument: ["(\"GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.\")"],
     test: {
       argument: ["GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."]
     }
@@ -40,7 +40,7 @@ const Data = [
     title:"Check For Palindromes",
     funcName: "checkForPalindromes",
     description:"A palindrome is a word or sentence that's spelled the same way both forward",
-    argument: ["A man, a plan, a canal. Panama"],
+    argument: ["(\"A man, a plan, a canal. Panama\")"],
     test: {
       argument: ["A man, a plan, a canal. Panama"]
     }
@@ -49,7 +49,7 @@ const Data = [
     title:"Chunky Monkey",
     funcName: "chunkyMonkey",
     description:"A function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.",
-    argument: ["[\"a\", \"b\", \"c\", \"d\"], 2"],
+    argument: ["([\"a\", \"b\", \"c\", \"d\"], 2)"],
     test: {
       argument: [["a", "b", "c", "d"], 2],
     }
