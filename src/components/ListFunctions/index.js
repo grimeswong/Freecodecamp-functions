@@ -7,7 +7,8 @@ const ListFunctions = (props) => {
     <div>
       <ul>List of JS function ({Data.length})
         {Data.map((utility, index) => {
-          return <li onClick={()=>props.onFunctionSelect(utility.title)} key={index}>{utility.title}</li>
+          // only return list of valid title 
+          return utility.title!=="" ? <li onClick={()=>props.onFunctionSelect(utility.title)} key={index}>{utility.title}</li> : null
         })}
       </ul>
     </div>
