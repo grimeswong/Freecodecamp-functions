@@ -10,6 +10,11 @@ const DisplayComponent = (props) => {
 
   const getFuncName = Data[getIndex].funcName;  // get the function according to its index of Data
 
+  // return input argument text(s) from array of argument
+  const argumentText = Data[getIndex].argument.map((element, index) => {
+    return (<p key={index} className="function-argument">{element}</p>)
+  })
+
   return (
   <div className="component-wrapper-top">
     <div className="function-upper-wrapper">
@@ -18,12 +23,14 @@ const DisplayComponent = (props) => {
     </div>
     <div className="function-lower-wrapper">
       <p className="function-test-title"></p>
-      <p className="function-argument">{Data[getIndex].test.argument.toString()}</p>
-      <p className="function-result">{util[getFuncName](Data[getIndex].test.argument).toString()}</p>
+      {argumentText}
+      <p className="function-result">{JSON.stringify(util[getFuncName](Data[getIndex].test.argument))}</p>
     </div>
     <div className="function-sourcecode-wrapper">
       <p className="function-sourcecode-title"></p>
-      <code className="function-sourcecode-source">{util[getFuncName].toString()}</code>
+      <pre>
+        <code className="function-sourcecode-source">{util[getFuncName].toString()}</code>
+      </pre>
     </div>
   </div>
   )

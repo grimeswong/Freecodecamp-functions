@@ -92,10 +92,6 @@ li:hover {
   text-align: left;
 }
 
-.function-argument::before {
-  content: "Argument : "
-}
-
 .function-result {
   text-align: left;
   font-size: 1.3em;
