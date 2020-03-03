@@ -108,6 +108,15 @@ const Data = [
       argument: ["*", 8],
     }
   },
+  {
+    title:"Roman Numeral Converter",
+    funcName: "romanNumeralConverter",
+    description: "Convert the given number into a roman numeral.",
+    argument: ["(44)"],
+    test: {
+      argument: [44],
+    }
+  },
 ]
 
 export default Data;
