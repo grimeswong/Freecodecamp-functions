@@ -18,7 +18,7 @@ const DisplayComponent = (props) => {
   console.log(Data[getIndex].test.argument)
 
   return (
-  <div className="component--wrapper">
+  <div className="component--wrapper function--wrapper">
     <div className="function--title-wrapper component--box-shadow">
       <p className="function--title">{Data[getIndex].title}</p>
       <p className="function--description">{Data[getIndex].description}</p>

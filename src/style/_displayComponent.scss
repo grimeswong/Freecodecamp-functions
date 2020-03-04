@@ -22,6 +22,9 @@
 }
 
 .function {
+  &--wrapper {
+    transition: 0.5s;
+  }
   &--title-wrapper {
     @include section-spacing();
     @include section-background();
