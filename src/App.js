@@ -6,18 +6,31 @@ class App extends Component {
   constructor(props) {
       super(props);
       this.state = {
-        selectedFunction: "Difference of Two Arrays"
+        selectedFunction: "Difference of Two Arrays",
+        menuStateClosed: true
       };
   }
 
-  toggle = () => {
-    console.log(`close or open side nav`)
+  toggleMenu = (e) => {
+    this.state.menuStateClosed? this.openMenu(): this.closeMenu()
+    this.setState({menuStateClosed: !this.state.menuStateClosed})
+    console.log(this.state.menuStateClosed);
+    console.log("toggleMenu");
+    console.log(this.state.menuStateClosed);
+  }
+
+  openMenu = () => {
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  closeMenu = () => {
+    document.body.style.backgroundColor = "white";
   }
 
   render() {
     return (
       <div className="App container">
-        <p className="mobile--open-btn" onClick={this.toggle()}>&#9776;</p>
+        <p className="mobile--open-btn" onClick={(e) => this.toggleMenu(e)}>&#9776;</p>
         <div className="row">
           <div className="col-md-6">
             <ListFunctions
