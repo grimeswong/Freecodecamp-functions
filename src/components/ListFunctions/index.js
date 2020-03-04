@@ -10,7 +10,13 @@ const ListFunctions = (props) => {
       <ul>
         {Data.map((utility, index) => {
           // only return list of valid title
-          return utility.title!=="" ? <li onClick={()=>props.onFunctionSelect(utility.title)} key={index}>{utility.title}</li> : null
+          return utility.title!=="" ?
+          <li onClick={ () => {
+              props.onFunctionSelect(utility.title);
+              props.toggleMenu();
+              }}
+              key={index}>{utility.title}
+          </li> : null
         })}
       </ul>
     </div>

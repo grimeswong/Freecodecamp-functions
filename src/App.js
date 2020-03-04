@@ -29,7 +29,7 @@ class App extends Component {
     document.querySelectorAll(".function--wrapper")[0].style.opacity = 1;
     document.getElementsByTagName("html")[0].style.overflow = "visible";
 
-        document.querySelectorAll(".list--wrapper")[0].style.left = "-100vw";
+        document.querySelectorAll(".list--wrapper")[0].style.left = "-200vw";
   }
 
   render() {
@@ -37,13 +37,13 @@ class App extends Component {
       <div className="App container">
         <a className="mobile--open-btn" onClick={(e) => this.toggleMenu(e)}>&#9776;</a>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <ListFunctions
               onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
               toggleMenu={this.toggleMenu}
               />
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <DisplayComponent
               selectedFunction={this.state.selectedFunction}
               />
