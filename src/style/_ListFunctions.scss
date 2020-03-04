@@ -1,5 +1,13 @@
 .list {
   &--wrapper {
+    position: relative;
+    .list--close-btn {
+      position: absolute;
+      right: 0rem;
+      top: 0;
+      padding: 0 1rem;
+      font-size: 3rem;
+    }
     p {
       padding: 0 35px;
       font-size: 1.5rem;

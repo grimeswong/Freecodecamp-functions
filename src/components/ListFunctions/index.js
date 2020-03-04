@@ -5,6 +5,7 @@ const ListFunctions = (props) => {
 
   return(
     <div className="list--wrapper component--wrapper">
+      <p className="list--close-btn">&times;</p>
       <p className="list--title">List of JS functions ({Data.length})</p>
       <ul>
         {Data.map((utility, index) => {

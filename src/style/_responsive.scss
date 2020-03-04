@@ -1,18 +1,34 @@
-@include tablet {
+@include small-device {
+  .container {
+    max-width: 100%;
+  }
+
+  .mobile--open-btn {
+    opacity: 1;
+  }
+
   .list {
     &--wrapper {
+      max-width: 576px;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      color: white;
+      background-color: green;
+      overflow-x: hidden;
+      transition: 0.5s;
       ul {
         grid-template-columns: 48% 48%;
       }
-    }
-  }
-}
-
-@include mobile {
-  .list {
-    &--wrapper {
-      ul {
-        grid-template-columns: 100%;
+      li {
+        box-shadow: none;
+      }
+      li:hover {
+        color: green;
+        background-color: white;
+        border: 2px white solid;
       }
     }
   }

@@ -10,9 +10,14 @@ class App extends Component {
       };
   }
 
+  toggle = () => {
+    console.log(`close or open side nav`)
+  }
+
   render() {
     return (
       <div className="App container">
+        <p className="mobile--open-btn" onClick={this.toggle()}>&#9776;</p>
         <div className="row">
           <div className="col-md-6">
             <ListFunctions
