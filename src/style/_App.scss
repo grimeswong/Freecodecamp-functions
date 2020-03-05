@@ -44,7 +44,7 @@ li {
 }
 
 .mobile--open-btn {
-  display: block;
+  display: none;
   position: fixed;
   padding: 3px;
   top: 1rem;
@@ -54,7 +54,6 @@ li {
   font-size: 3rem;
   color: black;
   cursor: pointer;
-  opacity: 0;
   transition: 1s;
   &:focus, &:hover {
     color: black;
