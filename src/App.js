@@ -18,13 +18,13 @@ class App extends Component {
   }
 
   openMenu = () => {
-    document.getElementsByTagName("html")[0].style.overflowY = "none";
-    document.querySelectorAll(".nav--wrapper")[0].style.left = "0";
+    document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+    document.querySelectorAll(".nav--wrapper")[0].style.width = "100%";
   }
 
   closeMenu = () => {
     document.getElementsByTagName("html")[0].style.overflowY = "scroll";
-    document.querySelectorAll(".nav--wrapper")[0].style.left = "-100vw";
+    document.querySelectorAll(".nav--wrapper")[0].style.width = "0";
   }
 
   render() {
