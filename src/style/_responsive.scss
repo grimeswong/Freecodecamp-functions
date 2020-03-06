@@ -1,0 +1,20 @@
+@include small-device {
+  .container {
+    max-width: 100%;
+    .nav {
+      &--wrapper {
+        display: block;
+      }
+    }
+  }
+
+  .mobile--toggle-btn {
+    display: block;
+  }
+
+  .list {
+    &--wrapper {
+      display: none;
+    }
+  }
+}

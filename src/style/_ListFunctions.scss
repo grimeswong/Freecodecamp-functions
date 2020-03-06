@@ -1,0 +1,26 @@
+.list {
+  &--wrapper {
+    position: relative;
+    p {
+      padding: 0 35px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    ul {
+      display: grid;
+      justify-content: space-evenly;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: auto auto auto;
+      align-content: space-evenly;
+      li {
+        margin: 5px 0;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        list-style-type: none;
+        border: 2px green solid;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@mixin section-spacing() {
+  margin: 0 auto 3rem;
+  padding: 10px 20px;
+  border: 2px darkgreen solid;
+  border-radius:5px;
+}
+
+@mixin section-background() {
+  background:linear-gradient(to right, green , darkgreen);
+}
+
+@mixin section-title() {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@mixin section-content() {
+  text-align: left;
+  font-size: 1rem;
+  color: black;
+}
+
+.function {
+  &--wrapper {
+    transition: 0.5s;
+  }
+  &--title-wrapper {
+    @include section-spacing();
+    @include section-background();
+  }
+
+  &--title {
+    @include section-title();
+  }
+
+  &--test-wrapper {
+    @include section-spacing();
+  }
+
+  &--test-title {
+    @include section-background();
+    @include section-title();
+  }
+
+  &--test-title::before {
+    content: "Argument(s) & Result";
+  }
+
+  &--description {
+    @include section-content();
+    color: white;
+  }
+
+  &--argument {
+    @include section-content();
+  }
+
+  &--result {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  &--result::before {
+    content: "Result = ";
+  }
+
+  &--sourcecode {
+    &-wrapper {
+      @include section-spacing;
+    }
+
+    &-title {
+      @include section-background();
+      @include section-title();
+    }
+
+    &-title::before {
+      content: "Source Code"
+    }
+  }
+}
