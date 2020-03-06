@@ -26,23 +26,6 @@ code {
   font-family: monospace;
 }
 
-ul {
-  padding: 0 35px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-li {
-  margin: 5px 0;
-  padding: 10px;
-  font-size: 1rem;
-  font-weight: normal;
-  list-style-type: none;
-  border: 2px green solid;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .mobile--open-btn {
   display: none;
   position: fixed;
