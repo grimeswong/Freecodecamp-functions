@@ -5,15 +5,14 @@ const ListFunctions = (props) => {
 
   return(
     <div className="list--wrapper component--wrapper">
-      <a className="list--close-btn" onClick={props.toggleMenu}>&times;</a>
+      <a href="#" className="list--close-btn" onClick={props.toggleMenu}>&times;</a>
       <p className="list--title">List of JS functions ({Data.length})</p>
       <ul>
         {Data.map((utility, index) => {
-          // only return list of valid title
-          return utility.title!=="" ?
+
+          return utility.title!=="" ? // only return list of valid title
           <li onClick={ () => {
               props.onFunctionSelect(utility.title);
-              props.toggleMenu();
               }}
               key={index}>{utility.title}
           </li> : null
