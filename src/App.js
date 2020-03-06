@@ -30,8 +30,10 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <a href="#" className="mobile--open-btn" onClick={(e) => this.toggleMenu(e)}>&#9776;</a>
-        <Nav toggleMenu={this.toggleMenu} />
+        <a href="#" className="mobile--toggle-btn" onClick={(e) => this.toggleMenu(e)}>&#9776;</a>
+        <Nav toggleMenu={this.toggleMenu}
+             onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
+        />
         <div className="row">
           <div className="col-lg-6">
             <ListFunctions
