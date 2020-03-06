@@ -1,6 +1,11 @@
 @include small-device {
   .container {
     max-width: 100%;
+    .nav {
+      &--wrapper {
+        display: block;
+      }
+    }
   }
 
   .mobile--open-btn {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from './components/Nav.js';
 import ListFunctions from './components/ListFunctions.js';
 import DisplayComponent from './components/DisplayComponent.js';
 
@@ -32,6 +33,7 @@ class App extends Component {
     return (
       <div className="App container">
         <a href="#" className="mobile--open-btn" onClick={(e) => this.toggleMenu(e)}>&#9776;</a>
+        <Nav />
         <div className="row">
           <div className="col-lg-6">
             <ListFunctions
