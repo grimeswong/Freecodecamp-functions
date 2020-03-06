@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ListFunctions from './components/ListFunctions';
+import ListFunctions from './components/ListFunctions.js';
 import DisplayComponent from './components/DisplayComponent.js';
 
 class App extends Component {

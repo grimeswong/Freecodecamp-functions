@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from '../../data/data.js';
+import Data from '../data/data.js';
 
 const ListFunctions = (props) => {
 
