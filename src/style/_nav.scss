@@ -1,13 +1,30 @@
 .nav {
   &--wrapper {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     display: none;
     z-index: 1;
     color: white;
     background-color: green;
+    transition: 0.5s;
+    overflow-x: hidden;
+  }
+  &--close-btn {
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    right: 0;
+    padding: 0 1rem;
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+    &:focus, &:hover {
+      color: white;
+      opacity: 0.7;
+      text-decoration: none;
+    }
   }
 }

@@ -40,8 +40,8 @@ code {
   transition: 1s;
   &:focus, &:hover {
     color: black;
+    opacity: 0.5;
     text-decoration: none;
-    opacity: 0.7;
   }
 }
 

@@ -5,7 +5,6 @@ const ListFunctions = (props) => {
 
   return(
     <div className="list--wrapper component--wrapper">
-      <a href="#" className="list--close-btn" onClick={props.toggleMenu}>&times;</a>
       <p className="list--title">List of JS functions ({Data.length})</p>
       <ul>
         {Data.map((utility, index) => {

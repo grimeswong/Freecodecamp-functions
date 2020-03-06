@@ -18,28 +18,25 @@ class App extends Component {
   }
 
   openMenu = () => {
-    document.body.style.backgroundColor = "rgb(26, 25, 25)";
-    document.querySelectorAll(".function--wrapper")[0].style.opacity = 0;
-    document.querySelectorAll(".list--wrapper")[0].style.left = "0";
+    document.getElementsByTagName("html")[0].style.overflowY = "none";
+    document.querySelectorAll(".nav--wrapper")[0].style.left = "0";
   }
 
   closeMenu = () => {
-    document.body.style.backgroundColor = "white";
-    document.querySelectorAll(".function--wrapper")[0].style.opacity = 1;
-    document.getElementsByTagName("html")[0].style.overflow = "scroll";
+    document.getElementsByTagName("html")[0].style.overflowY = "scroll";
+    document.querySelectorAll(".nav--wrapper")[0].style.left = "-100vw";
   }
 
   render() {
     return (
       <div className="App container">
         <a href="#" className="mobile--open-btn" onClick={(e) => this.toggleMenu(e)}>&#9776;</a>
-        <Nav />
+        <Nav toggleMenu={this.toggleMenu} />
         <div className="row">
           <div className="col-lg-6">
             <ListFunctions
               onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
-              toggleMenu={this.toggleMenu}
-              />
+            />
           </div>
           <div className="col-lg-6">
             <DisplayComponent

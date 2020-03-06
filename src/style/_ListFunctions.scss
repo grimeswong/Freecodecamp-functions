@@ -1,19 +1,6 @@
 .list {
   &--wrapper {
     position: relative;
-    .list--close-btn {
-      position: absolute;
-      right: 0rem;
-      top: 0;
-      right: 0;
-      padding: 0 1rem;
-      font-size: 3rem;
-      color: white;
-      cursor: pointer;
-      &:focus, &:hover {
-        text-decoration: none;
-      }
-    }
     p {
       padding: 0 35px;
       font-size: 1.5rem;
