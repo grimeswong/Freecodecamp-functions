@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Data from '../data/data.js';
+import ThemeContext from './ThemeContext.js'; //Subscribe the ThemeContext Object
 
 export const Nav = (props) => {
+    const theme = useContext(ThemeContext);
+
   return(
     <div className="nav--wrapper">
       <ul>

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Data from '../data/data.js'
 import * as util from '../utils/utilList.js'; // loaded all the functions from the utilities list
+import ThemeContext from './ThemeContext.js'; //Subscribe the ThemeContext Object
 
 const DisplayComponent = (props) => {
 
@@ -17,24 +18,26 @@ const DisplayComponent = (props) => {
 
   console.log(Data[getIndex].test.argument)
 
+  const theme = useContext(ThemeContext);
+
   return (
-  <div className="component--wrapper function--wrapper">
-    <div className="function--title-wrapper component--box-shadow">
-      <p className="function--title">{Data[getIndex].title}</p>
-      <p className="function--description">{Data[getIndex].description}</p>
-    </div>
-    <div className="function--test-wrapper component--box-shadow">
-      <p className="function--test-title"></p>
-      {argumentText}
-      <p className="function--result">{JSON.stringify(util[getFuncName](...Data[getIndex].test.argument))}</p>
-    </div>
-    <div className="function--sourcecode-wrapper component--box-shadow">
-      <p className="function--sourcecode-title"></p>
-      <pre>
-        <code className="function--sourcecode-source">{util[getFuncName].toString()}</code>
-      </pre>
-    </div>
-  </div>
+      <div className="component--wrapper function--wrapper">
+        <div className="function--title-wrapper component--box-shadow">
+          <p className="function--title">{Data[getIndex].title}</p>
+          <p className="function--description">{Data[getIndex].description}</p>
+        </div>
+        <div className="function--test-wrapper component--box-shadow">
+          <p className="function--test-title"></p>
+          {argumentText}
+          <p className="function--result">{JSON.stringify(util[getFuncName](...Data[getIndex].test.argument))}</p>
+        </div>
+        <div className="function--sourcecode-wrapper component--box-shadow">
+          <p className="function--sourcecode-title"></p>
+          <pre>
+            <code className="function--sourcecode-source">{util[getFuncName].toString()}</code>
+          </pre>
+        </div>
+      </div>
   )
 }
 

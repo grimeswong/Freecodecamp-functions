@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Data from '../data/data.js';
+import ThemeContext from './ThemeContext.js'; //Subscribe the ThemeContext Object
 
 const ListFunctions = (props) => {
+
+  const theme = useContext(ThemeContext);
 
   return(
     <div className="list--wrapper component--wrapper">
