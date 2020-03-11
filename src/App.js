@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from './components/Nav.js';
 import ListFunctions from './components/ListFunctions.js';
 import DisplayComponent from './components/DisplayComponent.js';
+import ThemeButton from './components/Theme-Button.js';
 import { ThemeContext, themeColour } from './components/ThemeContext.js';
 
 class App extends Component {
@@ -10,9 +11,19 @@ class App extends Component {
       this.state = {
         selectedFunction: "Difference of Two Arrays",
         menuStateClosed: true,
-        theme: themeColour.dark,
+        theme: themeColour.light,
+        toggleTheme: this.toggleTheme,
       };
   }
+
+  toggleTheme = () => {
+      this.setState(state => ({
+        theme:
+          state.theme === themeColour.dark
+            ? themeColour.light
+            : themeColour.dark,
+      }));
+  };
 
   toggleMenu = (e) => {
       this.state.menuStateClosed? this.openMenu(): this.closeMenu()
@@ -32,7 +43,7 @@ class App extends Component {
   render() {
 
     return (
-      <ThemeContext.Provider value={this.state.theme}>
+      <ThemeContext.Provider value={this.state}>
 
         <div className="App"
              style={{ color: this.state.theme.color,
@@ -43,7 +54,8 @@ class App extends Component {
             <a href="#" className="mobile--toggle-btn" onClick={(e) => this.toggleMenu(e)} style={{color: this.state.theme.colour}}>&#9776;</a>
             <Nav toggleMenu={this.toggleMenu}
               onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
-              />
+            />
+          <ThemeButton />
             <div className="row">
               <div className="col-lg-6">
                 <ListFunctions

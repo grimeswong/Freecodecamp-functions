@@ -3,7 +3,7 @@ import Data from '../data/data.js';
 import { ThemeContext } from './ThemeContext.js'; //Subscribe the ThemeContext Object
 
 export const Nav = (props) => {
-  const theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext).theme;
 
   return(
     <div className="nav--wrapper" style={{backgroundColor: theme.navBgColour}}>

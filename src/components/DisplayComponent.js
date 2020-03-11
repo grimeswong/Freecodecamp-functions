@@ -5,7 +5,7 @@ import { ThemeContext } from './ThemeContext.js'; //Subscribe the ThemeContext O
 
 const DisplayComponent = (props) => {
 
-  const theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext).theme;
 
   const getIndex = Data.findIndex((element) => {  // get the index compared with the props selected function
       return element.title === props.selectedFunction;

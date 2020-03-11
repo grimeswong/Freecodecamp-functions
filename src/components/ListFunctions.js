@@ -4,7 +4,7 @@ import { ThemeContext } from './ThemeContext.js'; //Subscribe the ThemeContext O
 
 const ListFunctions = (props) => {
 
-  const theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext).theme;
 
   return(
     <div className="list--wrapper component--wrapper" style={{ color: theme.textColour }}>

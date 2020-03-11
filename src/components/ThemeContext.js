@@ -20,5 +20,7 @@ export const themeColour = {
 }
 
 export const ThemeContext = React.createContext(
-  themeColour.light // default value
+  { theme: themeColour.light, // default value
+    toggleTheme: () => {},  // default value empty function
+  }
 );
