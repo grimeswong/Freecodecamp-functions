@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './components/Nav.js';
 import ListFunctions from './components/ListFunctions.js';
-import DisplayComponent from './components/DisplayComponent.js';
+import ProcessData from './components/ProcessData.js';
 import ThemeButton from './components/Theme-Button.js';
 import { ThemeContext, themeColour } from './components/ThemeContext.js';
 
@@ -63,7 +63,7 @@ class App extends Component {
                   />
               </div>
               <div className="col-lg-6">
-                <DisplayComponent
+                <ProcessData
                   selectedFunction={this.state.selectedFunction}
                   />
               </div>
