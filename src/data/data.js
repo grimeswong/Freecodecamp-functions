@@ -180,6 +180,15 @@ const Data = [
       argument: [[{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2, "cookie": 2 }, { "bat":2 }], { "apple": 1, "bat": 2 }],
     }
   },
+  {
+    title:"Get Geolocation",
+    funcName: "getGeolocation",
+    description: "Get user current geolocation and return latitude and longitude",
+    argument: ["Get navigator.geolocation from browser"],
+    test: {
+      argument: [],
+    }
+  },
 ]
 
 export default Data;
