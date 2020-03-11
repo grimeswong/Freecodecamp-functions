@@ -18,7 +18,6 @@ const DisplayComponent = (props) => {
     return (<p key={index} className="function--argument" style={{color: theme.colour}}>{element}</p>)
   })
 
-  console.log(theme.bgColour);
   console.log(Data[getIndex].test.argument)
 
   return (
