@@ -5,7 +5,6 @@ import { ThemeContext } from './ThemeContext.js'; //Subscribe the ThemeContext O
 // This component only display the processed data
 const DisplayBlock = (props) => {
   const theme = useContext(ThemeContext).theme;
-  console.log(props);
 
   // return input argument text(s) from array of argument
   const argumentText = props.arguments.map((element, index) => {
