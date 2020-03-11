@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  transition: 1s;
   background-color: $pri-bg-colour;
 }
 
@@ -62,7 +61,17 @@ li:hover {
 }
 
 button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
   border: none;
+  z-index: 2;
+  transition: 1s
+  &:focus, &:hover {
+    transform: scale(0.95);
+    transition: 0.5s
+  }
 }
 
 .component--wrapper {
