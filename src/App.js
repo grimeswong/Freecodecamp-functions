@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import Nav from './components/Nav.js';
 import ListFunctions from './components/ListFunctions.js';
 import DisplayComponent from './components/DisplayComponent.js';
-import ThemeContext from './components/ThemeContext.js';
+import { ThemeContext, themeColour } from './components/ThemeContext.js';
 
 class App extends Component {
   constructor(props) {
       super(props);
       this.state = {
         selectedFunction: "Difference of Two Arrays",
-        menuStateClosed: true
+        menuStateClosed: true,
+        theme: themeColour.dark,
       };
   }
 
@@ -29,23 +30,31 @@ class App extends Component {
   }
 
   render() {
+
     return (
-      <ThemeContext.Provider value="green">
-        <div className="App container">
-          <a href="#" className="mobile--toggle-btn" onClick={(e) => this.toggleMenu(e)}>&#9776;</a>
-          <Nav toggleMenu={this.toggleMenu}
-            onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
-            />
-          <div className="row">
-            <div className="col-lg-6">
-              <ListFunctions
-                onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
-                />
-            </div>
-            <div className="col-lg-6">
-              <DisplayComponent
-                selectedFunction={this.state.selectedFunction}
-                />
+      <ThemeContext.Provider value={this.state.theme}>
+
+        <div className="App"
+             style={{ color: this.state.theme.color,
+                      backgroundColor: this.state.theme.bgColour,
+                    }}
+        >
+          <div className="container">
+            <a href="#" className="mobile--toggle-btn" onClick={(e) => this.toggleMenu(e)} style={{color: this.state.theme.colour}}>&#9776;</a>
+            <Nav toggleMenu={this.toggleMenu}
+              onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
+              />
+            <div className="row">
+              <div className="col-lg-6">
+                <ListFunctions
+                  onFunctionSelect={selectedFunction => this.setState({selectedFunction})}
+                  />
+              </div>
+              <div className="col-lg-6">
+                <DisplayComponent
+                  selectedFunction={this.state.selectedFunction}
+                  />
+              </div>
             </div>
           </div>
         </div>

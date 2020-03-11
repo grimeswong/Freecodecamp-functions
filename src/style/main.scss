@@ -3,11 +3,12 @@
 @import './_agent-reset.css';
 
 // variables and mixin
+@import './variables.scss';
 @import './mixin.scss';
 
 // Component
 @import './App.scss';
-@import './_nav.scss';
+@import './nav.scss';
 @import './ListFunctions.scss';
 @import './displayComponent.scss';
 

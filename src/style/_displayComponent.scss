@@ -1,24 +1,24 @@
 @mixin section-spacing() {
   margin: 0 auto 3rem;
   padding: 10px 20px;
-  border: 2px darkgreen solid;
+  border: 2px $gradient-sec-colour solid;
   border-radius:5px;
 }
 
 @mixin section-background() {
-  background:linear-gradient(to right, green , darkgreen);
+  background:linear-gradient(to right, $gradient-pri-colour , $gradient-sec-colour);
 }
 
 @mixin section-title() {
   text-align: center;
   font-size: 1.5rem;
-  color: white;
+  color: $pri-title-colour;
 }
 
 @mixin section-content() {
   text-align: left;
   font-size: 1rem;
-  color: black;
+  color: $pri-text-colour;
 }
 
 .function {
@@ -49,7 +49,7 @@
 
   &--description {
     @include section-content();
-    color: white;
+    color: $pri-title-colour;
   }
 
   &--argument {
